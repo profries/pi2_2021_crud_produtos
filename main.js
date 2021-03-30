@@ -13,7 +13,10 @@ for(let prod of cadastroProdutos.listar()){
     console.log (`Produto ${prod.codigo}: ${prod.nome}, ${prod.preco}`);
 }
 
-cadastroProdutos.deletar(1);
+console.log(cadastroProdutos.deletar(5));
+
+cadastroProdutos.atualizar(2, new Produto(2,"feijao",9.2));
 
 console.log(cadastroProdutos.listar());
+
 
